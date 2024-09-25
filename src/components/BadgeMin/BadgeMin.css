@@ -1,0 +1,30 @@
+.badge-min {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--badge-color);
+  padding: 5px;
+  border-radius: 999px;
+}
+
+.badge-min p {
+  margin-left: 5px;
+  background-color: var(--badge-color);
+  padding: 2px;
+}
+
+.badge-min svg {
+  background-color: var(--badge-color);
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+  .badge-min p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .badge-min p {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,99 @@
+ /* BadgeMin */
+ .badge-min-footer {
+  display: inline-flex;
+  align-items: center;
+  background-color: #21262F;
+  padding: 6px;
+  border-radius: 999px;
+}
+
+.badge-min-footer p {
+  background-color: #21262F;
+  font-size: 0.6rem;
+  padding: 0px;
+  margin: 2px 5px 2px 2px;
+  color: #ffff;
+}
+
+.badge-min-footer svg {
+  background-color: #21262F;
+  margin: 2px 5px 2px 2px;
+  font-size: 1rem;
+  color: #ffff;
+}
+
+.badges-footer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem;
+  background-color: var(--badge-color);
+}
+
+/* badgeDate */
+.badge-date-footer {
+  display: inline-flex;
+  align-items: center;
+  background-color: #21262F;
+  padding: 8px;
+  border-radius: 999px;
+}
+
+.badge-date-footer p {
+  background-color: #21262F;
+  font-size: 0.6rem;
+  padding: 4px;
+  margin: 2px 5px 2px 2px;
+  color: #ffff;
+}
+
+.badge-date-footer svg {
+  background-color: #21262F;
+  margin: 2px 5px 2px 2px;
+  font-size: 1rem;
+  color: #ffff;
+}
+
+/* LikeButton  */
+.div-button-footer {
+  background-color: var(--badge-color);
+}
+
+.like-button-footer {
+  display: inline-flex;
+  align-items: center;
+  background-color: #21262F;
+  padding: 8px;
+  border-radius: 100px;
+  border: 1px solid black;
+}
+
+.like-button-footer svg {
+  background-color: #21262F;
+  margin: 2px 5px 2px 2px;
+  font-size: 1rem;
+  color: #ffff;
+}
+ 
+.like-button-footer span{
+  background-color: #21262F;
+  margin: 2px 5px 4px 2px;
+  font-size: 0.8rem;
+  color: #ffff;
+}
+
+/* responsividade */
+@media (max-width: 480px) {
+  .badges-footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  .badge-min-footer p,
+  .badge-date-footer p,
+  .like-button-footer span {
+    font-size: 0.5rem;
+    border: 1px solid black;
+  }
+}

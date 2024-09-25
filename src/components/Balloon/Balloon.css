@@ -1,0 +1,46 @@
+.balloon {
+  margin: 3rem 12rem 3rem 12rem;
+  background-color: var(--badge-color);
+  padding: 2rem 3rem 2rem 3rem;
+  border-radius: 1.5rem;
+}
+
+.balloon h4 {
+  display: flex;
+  justify-content: start;
+  margin: 2rem 3rem 1.5rem 2rem;
+  font-size: 1.75rem;
+  font-weight: 800;
+  background-color: var(--badge-color);
+}
+
+.balloon p {
+  display: flex;
+  justify-content: start;
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin: 2rem 3rem 1.5rem 2rem;
+  text-align: justify;
+  background-color: var(--badge-color);
+}
+
+/* responsividade */
+@media (max-width: 1022px) {
+  .balloon {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    gap: 2rem;
+  }
+
+  .balloon h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .balloon p {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+}
+

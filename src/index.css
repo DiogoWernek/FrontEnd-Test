@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  text-align: center;
+  background-color: white;
+  --second-color: #f1f1f1;
+  --text-color: #21262F;
+  --badge-color: #E9ECF0;
+}

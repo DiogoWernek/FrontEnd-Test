@@ -1,0 +1,40 @@
+.text-books {
+    width: 100%; 
+    margin: auto;
+}
+
+.text-books h2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 800;
+    margin: 3rem 12.688rem 1.5rem 12.688rem;   /* margin: CIMA DIREITA BAIXO ESQUERDA; */
+}
+
+.text-books p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    margin: 0rem 12.688rem 0 12.688rem;
+}
+
+.text-books a {
+    color: #589BFF;
+    text-decoration: none;
+  }
+
+/* responsividade */
+@media (max-width: 1150px) {
+    .text-books p {
+      margin: 3rem 2rem;
+      font-size: 16px;
+    }
+    
+    .text-books h2 {
+        margin: 3rem 6rem;
+        font-size: 30px;
+    }
+}
+
+  

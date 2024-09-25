@@ -1,0 +1,49 @@
+.books-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.books-container div {
+  gap: 5px;
+  font-size: 59px;
+  margin: 3rem 0rem 0rem 0rem;
+}
+
+.books-container img {
+  max-width: 256px;
+  width: 30rem;
+  border-radius: 16px;
+}
+
+.books-container h1 {
+  font-size: 11px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.books-container p {
+  font-size: 11px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* responsividade */
+@media (max-width: 1190px) {
+  .books-container {
+    flex-direction: column;
+  }
+
+  .books-container div {
+    margin: 0;
+  }
+
+  .books-container h1 {
+    font-size: 0.8rem;
+  }
+
+  .books-container p {
+    font-size: 0.6rem;
+  }
+}

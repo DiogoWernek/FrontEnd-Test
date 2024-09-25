@@ -1,0 +1,137 @@
+/* BadgeMin */
+.badge-mi {
+  display: inline-flex;
+  align-items: center;
+  background-color: #21262F;
+  padding: 6px;
+  border-radius: 999px;
+}
+
+.badge-mi p {
+  background-color: #21262F;
+  font-size: 0.6rem;
+  padding: 0px;
+  margin: 2px 5px 2px 2px;
+  color: #ffff;
+}
+
+.badge-mi svg {
+  background-color: #21262F;
+  margin: 2px 5px 2px 2px;
+  font-size: 1rem;
+  color: #ffff;
+}
+
+.badges{
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  margin: 2rem 3rem 1.5rem 2rem;
+  background-color: var(--badge-color);
+}
+
+/* badgeDate */
+.badge-dat {
+  display: inline-flex;
+  align-items: center;
+  background-color: #21262F;
+  padding: 8px;
+  border-radius: 999px;
+}
+
+.badge-dat p {
+  background-color: #21262F;
+  font-size: 0.6rem;
+  padding: 4px;
+  margin: 2px 5px 2px 2px;
+  color: #ffff;
+}
+
+.badge-dat svg {
+  background-color: #21262F;
+  margin: 2px 5px 2px 2px;
+  font-size: 1rem;
+  color: #ffff;
+}
+
+/* LikeButton  */
+.div-button {
+  background-color: var(--badge-color);
+}
+
+.like-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #21262F;
+  padding: 8px;
+  border-radius: 100px;
+}
+
+.like-button svg {
+  background-color: #21262F;
+  margin: 2px 5px 2px 2px;
+  font-size: 1rem;
+  color: #ffff;
+}
+ 
+.like-button span {
+  background-color: #21262F;
+  margin: 2px 5px 4px 2px;
+  font-size: 0.9rem;
+  color: #ffff;
+}
+
+/* responsividade */
+@media (max-width: 1390px) {
+  .badges {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  .badge-dat, .badge-mi {
+    margin-bottom: 0.5rem;
+    min-width: 120px;
+  }
+
+  .badge-dat p, .badge-mi p {
+    font-size: 0.5rem;
+    padding: 2px;
+  }
+
+  .like-button {
+    padding: 4px 8px;
+  }
+
+  .like-button span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .badges {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  .badge-dat, .badge-mi {
+    margin-bottom: 0.5rem;
+    min-width: 120px;
+  }
+
+  .badge-dat p, .badge-mi p {
+    font-size: 0.5rem;
+    padding: 2px;
+  }
+
+  .like-button {
+    padding: 4px 8px;
+  }
+
+  .like-button span {
+    font-size: 0.9rem;
+  }
+}

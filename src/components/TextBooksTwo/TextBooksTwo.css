@@ -1,0 +1,32 @@
+.text-books-two {
+  width: 100%; 
+}
+
+.text-books-two h2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 800;
+  margin: 3rem 12.688rem 1.5rem 12.688rem;   /* margin: CIMA DIREITA BAIXO ESQUERDA; */
+}
+
+.text-books-two p {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+  margin: 0rem 12.688rem 0 12.688rem;
+}
+
+/* responsividade */
+ @media (max-width: 1150px) {
+  .text-books-two p {
+    margin: 3rem 2rem;
+    font-size: 16px;
+  }
+  
+  .text-books-two h2 {
+      margin: 3rem 6rem;
+      font-size: 30px;
+  }
+}

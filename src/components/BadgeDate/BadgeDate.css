@@ -1,0 +1,30 @@
+.badge-date {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--badge-color);
+  padding: 0.313rem;
+  border-radius: 999px;
+}
+
+.badge-date p {
+  margin-left: 0.313rem;
+  background-color: var(--badge-color);
+  padding: 0.125rem;
+}
+
+.badge-date svg {
+  background-color: var(--badge-color);
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+  .badge-date p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .badge-date p {
+    font-size: 10px;
+  }
+}
