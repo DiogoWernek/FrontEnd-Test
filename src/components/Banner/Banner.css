@@ -26,9 +26,9 @@
 }
 
 /* responsividade */
-@media (max-width: 768px) {
+@media (max-width: 1368px) {
   .banner img {
-    width: 100%;
+    width: 95%;
   }
 
   .banner .description p {

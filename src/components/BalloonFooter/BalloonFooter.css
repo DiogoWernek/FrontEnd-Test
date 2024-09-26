@@ -1,5 +1,5 @@
- /* BadgeMin */
- .badge-min-footer {
+/* BadgeMin */
+.badge-mi {
   display: inline-flex;
   align-items: center;
   background-color: #21262F;
@@ -7,7 +7,7 @@
   border-radius: 999px;
 }
 
-.badge-min-footer p {
+.badge-mi p {
   background-color: #21262F;
   font-size: 0.6rem;
   padding: 0px;
@@ -15,23 +15,23 @@
   color: #ffff;
 }
 
-.badge-min-footer svg {
+.badge-mi svg {
   background-color: #21262F;
   margin: 2px 5px 2px 2px;
   font-size: 1rem;
   color: #ffff;
 }
 
-.badges-footer {
+.badges{
   display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 2rem;
+  justify-content: start;
+  gap: 1rem;
+  margin: 2rem 3rem 1.5rem 2rem;
   background-color: var(--badge-color);
 }
 
 /* badgeDate */
-.badge-date-footer {
+.badge-dat {
   display: inline-flex;
   align-items: center;
   background-color: #21262F;
@@ -39,7 +39,7 @@
   border-radius: 999px;
 }
 
-.badge-date-footer p {
+.badge-dat p {
   background-color: #21262F;
   font-size: 0.6rem;
   padding: 4px;
@@ -47,7 +47,7 @@
   color: #ffff;
 }
 
-.badge-date-footer svg {
+.badge-dat svg {
   background-color: #21262F;
   margin: 2px 5px 2px 2px;
   font-size: 1rem;
@@ -55,45 +55,83 @@
 }
 
 /* LikeButton  */
-.div-button-footer {
+.div-button {
   background-color: var(--badge-color);
 }
 
-.like-button-footer {
+.like-button {
   display: inline-flex;
   align-items: center;
   background-color: #21262F;
   padding: 8px;
   border-radius: 100px;
-  border: 1px solid black;
 }
 
-.like-button-footer svg {
+.like-button svg {
   background-color: #21262F;
   margin: 2px 5px 2px 2px;
   font-size: 1rem;
   color: #ffff;
 }
  
-.like-button-footer span{
+.like-button span {
   background-color: #21262F;
   margin: 2px 5px 4px 2px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #ffff;
 }
 
 /* responsividade */
-@media (max-width: 480px) {
-  .badges-footer {
+@media (max-width: 1390px) {
+  .badges {
     flex-wrap: wrap;
     justify-content: center;
-    margin: 1rem;
+    margin: 2rem;
+    margin-bottom: 0rem;
   }
 
-  .badge-min-footer p,
-  .badge-date-footer p,
-  .like-button-footer span {
+  .badge-dat, .badge-mi {
+    margin-bottom: 0.5rem;
+    min-width: 120px;
+  }
+
+  .badge-dat p, .badge-mi p {
     font-size: 0.5rem;
-    border: 1px solid black;
+    padding: 2px;
+  }
+
+  .like-button {
+    padding: 4px 8px;
+  }
+
+  .like-button span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .badges {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  .badge-dat, .badge-mi {
+    margin-bottom: 0.5rem;
+    min-width: 120px;
+  }
+
+  .badge-dat p, .badge-mi p {
+    font-size: 0.5rem;
+    padding: 2px;
+  }
+
+  .like-button {
+    padding: 4px 8px;
+  }
+
+  .like-button span {
+    font-size: 0.9rem;
   }
 }

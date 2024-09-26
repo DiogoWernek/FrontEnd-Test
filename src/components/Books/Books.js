@@ -1,27 +1,29 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import './Books.css';
 
 function Books() {
   const [books, setBooks] = useState([]);
   const bookTitles = [
-    "Harry Potter e a Câmara Secreta", 
-    "Harry Potter e a Pedra Filosofal", 
-    "Harry Potter e o prisioneiro de Azkaban", 
-    "Harry Potter e o Cálice de Fogo"
+    "Câmara Secreta", 
+    "Câmara dos Segredos", 
+    "Prisioneiro de Azkaban", 
+    "Cálice de Fogo"
   ];
 
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const responses = await Promise(
+        const responses = await Promise.all(
           bookTitles.map(title => 
-            fetch(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(title)}`)
+            axios.get(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(title)}`)
           )
         );
 
         const fetchedBooks = responses.map(response => {
           const book = response.data.items[0];
           return {
+            id: book.id,
             title: book.volumeInfo.title,
             authors: book.volumeInfo.authors || ["Autor Desconhecido"],
             image: book.volumeInfo.imageLinks?.thumbnail || '/images/cape.png'
@@ -35,7 +37,7 @@ function Books() {
     };
 
     fetchBooks();
-  }, );
+  }, []);
 
   return (
     <div className="books-container">
